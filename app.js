@@ -21,6 +21,10 @@ app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
 
+app.get("/", (req, res) => {
+  res.send("Server is running!");
+});
+
 // // MySQL 쿼리 예시
 // app.get("/questions", async (req, res) => {
 //   try {
